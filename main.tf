@@ -1,0 +1,8 @@
+resource "aws_instance" "exemplo" {
+    ami = data.aws_ami.amazon_linux
+    instance_type = "t3.micro"
+
+    tags = {
+        Name = "Primeira Máquina Virtual EC2"
+    }
+}
