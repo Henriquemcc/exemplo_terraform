@@ -27,7 +27,7 @@ resource "aws_network_interface" "minha_interface_rede" {
 
 resource "aws_instance" "minha_instancia_ec2" {
     ami = "ami-0b826bb6d96d2afe4"
-    instance_type = "t2.micro"
+    instance_type = "t3.micro"
 
     primary_network_interface {
         network_interface_id = aws_network_interface.minha_interface_rede.id
