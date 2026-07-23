@@ -18,7 +18,7 @@ resource "aws_subnet" "minha_subnet" {
 
 resource "aws_instance" "minha_ec2" {
     ami = data.aws_ami.amzn-linux-2023-ami.id
-    instance_type = "t3.micro"
+    instance_type = "c6a.2xlarge"
     subnet_id = aws_subnet.minha_subnet.id
 
     cpu_options {
