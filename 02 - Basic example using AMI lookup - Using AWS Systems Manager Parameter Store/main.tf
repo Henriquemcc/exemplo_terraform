@@ -3,6 +3,6 @@ resource "aws_instance" "exemplo" {
     instance_type = "t3.micro"
 
     tags = {
-        Name = "Primeira Máquina Virtual EC2"
+        Name = "Segunda Máquina Virtual EC2"
     }
 }
